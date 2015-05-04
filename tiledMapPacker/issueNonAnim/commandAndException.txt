@@ -1,0 +1,14 @@
+command:
+
+java -cp gdx.jar:gdx-natives.jar:gdx-backend-lwjgl.jar:gdx-backend-lwjgl-natives.jar:gdx-tiled-preprocessor.jar:extensions/gdx-tools/gdx-tools.jar com.badlogic.gdx.tiledmappacker.TiledMapPacker ../in/ ../out/ --strip-unused
+
+exception:
+
+Exception in thread "LWJGL Application" java.lang.NullPointerException
+	at com.badlogic.gdx.maps.tiled.tiles.AnimatedTiledMapTile.getTextureRegion(AnimatedTiledMapTile.java:84)
+	at com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer.renderTileLayer(OrthogonalTiledMapRenderer.java:102)
+	at com.badlogic.gdx.maps.tiled.renderers.BatchTiledMapRenderer.render(BatchTiledMapRenderer.java:138)
+	at com.badlogic.gdx.tests.lwjgl.Barebones.render(Barebones.java:37)
+	at com.badlogic.gdx.backends.lwjgl.LwjglApplication.mainLoop(LwjglApplication.java:215)
+	at com.badlogic.gdx.backends.lwjgl.LwjglApplication$1.run(LwjglApplication.java:120)
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><map height="3" nextobjectid="1" orientation="orthogonal" renderorder="right-down" tileheight="32" tilewidth="32" version="1.0" width="3"><properties><property name="atlas" value="tileset/packed.atlas"/><property name="blended tiles" value=""/></properties>
+ <tileset firstgid="1" name="tiles" tileheight="32" tilewidth="32">
+  <image height="512" source="tiles.png" width="512"/>
+  <tile id="64">
+   <animation>
+    <frame duration="100" tileid="64"/>
+    <frame duration="100" tileid="65"/>
+    <frame duration="100" tileid="66"/>
+    <frame duration="100" tileid="67"/>
+    <frame duration="100" tileid="68"/>
+    <frame duration="100" tileid="69"/>
+    <frame duration="100" tileid="70"/>
+    <frame duration="100" tileid="71"/>
+   </animation>
+  </tile>
+ </tileset>
+ <layer height="3" name="tiles" width="3">
+  <data encoding="csv">
+65,65,65,
+0,0,0,
+0,0,0
+</data>
+ </layer>
+</map>
