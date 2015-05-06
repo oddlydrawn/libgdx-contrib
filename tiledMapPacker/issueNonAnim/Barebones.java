@@ -24,7 +24,6 @@ public class Barebones extends ApplicationAdapter {
 		float h = Gdx.graphics.getHeight();
 		camera = new OrthographicCamera(w, h);
 		resolver = new InternalFileHandleResolver();
-		resolver.resolve(TMX_LOC);
 		atlasTmxMapLoader = new AtlasTmxMapLoader(resolver);
 
 		map = atlasTmxMapLoader.load(TMX_LOC);
