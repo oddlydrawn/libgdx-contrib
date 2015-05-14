@@ -1,4 +1,4 @@
-Adds the following functionality to TiledMapPacker:
+Adds/Changes the following
   - Searches for maps in nested folders, regardless of depth
   - Creates an individual atlas for each map (uses the map name sans extension)
   - Fixes the problem of not locating tilesets with ../ in the map
@@ -6,6 +6,7 @@ Adds the following functionality to TiledMapPacker:
       The old method of combining tilesets into one atlas still has this
       problem.
   - Old functionality can be called with the option "--combine-tilesets"
+  - Adds two classes to test the options and renders the processed maps
 
 Changes usage to:
   Usage: INPUTDIR [OUTPUTDIR] [--include-unused] [--combine-tilesets] [-v]
@@ -30,7 +31,7 @@ those specified in the map.
 
 Example:
 
-Running "TiledMapPacker ./in ./out"
+Running TiledMapPacker on "./in ./out"
 with an "in" directory with the following structure:
 
   in/overworld.tmx
